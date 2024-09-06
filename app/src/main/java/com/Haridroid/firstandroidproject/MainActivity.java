@@ -40,8 +40,8 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
-    String sheetID="1Pe3y3su3YildYGzGtGIpt6Y0wX32pHIzIop4DT7h-fk";
-    String apiKEY= "AIzaSyBfg3S0K1nWFzKxNo-P78qxcoJKiR2iwU8";
+    String sheetID="YOUR-SHEET-ID";
+    String apiKEY= "YOUR-API-KEY";
     String temp;
     String humid;
     String intence;
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     String urls= "https://sheets.googleapis.com/v4/spreadsheets/"+sheetID+"/values/Sheet1?key="+apiKEY;
     Integer fansvich=0;
     Integer bulbsvich=0;
-    String url="https://script.google.com/macros/s/AKfycby0yPhCvQWpkfd_FVYoV5MwNgHdSDivrKUHStC39D60kR0zSPTpWY5qPopgQpax34w_/exec";
+    String url="APP-SCRIPT-EXEC-URL";
     String strmanual;
     Integer intmanual=0;
 
