@@ -1,0 +1,31 @@
+var sheet = SpreadsheetApp.openByUrl("YOUR-SHEET-LINK");
+
+function doPost(e){
+  var action= e.parameter.action;
+  if(action=='updateM1'){
+    return updateM1(e);
+  }
+  if(action=='updateN1'){
+    return updateN1(e);
+  }
+  if(action=='updateO1'){
+    return updateO1(e);
+  }
+  
+}
+
+function updateM1(e){
+  var value= e.parameter.value;
+  var e1 = sheet.getRange('M1');
+  e1.setValue(value);
+}
+function updateN1(e){
+  var value= e.parameter.value;
+  var e1 = sheet.getRange('N1');
+  e1.setValue(value);
+}
+function updateO1(e){
+  var value= e.parameter.value;
+  var e1 = sheet.getRange('O1');
+  e1.setValue(value);
+}
